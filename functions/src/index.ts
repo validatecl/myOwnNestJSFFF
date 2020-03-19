@@ -17,7 +17,7 @@ const createNestServer = async (expressInstance) => {
 
 
 createNestServer(server)
-    .then(v => console.log('Nest Ready'))
+    .then(v => console.log('Nest Ready', v))
     .catch(err => console.error('Nest broken', err));
 
 export const api = functions.https.onRequest(server);
